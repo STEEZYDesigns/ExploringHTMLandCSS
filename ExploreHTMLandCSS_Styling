@@ -1,0 +1,155 @@
+/* Universal Styles, marked by an asterisk. These features will be added to all elements.*/
+* {
+  border:lightblue dotted 1px;
+  padding: 1px;
+}
+
+/* Basic paragraph color will always be black, aligned left */
+p {
+  color: #000000;
+  text-align: left;
+  font-family: Helvetica, sans-serif
+}
+
+/* This following "td p" block shows how to specify elements within elements. You just need the correct order.*/
+td p{
+  text-align: center;
+}
+
+/* Basic h1 */
+h1 {
+  border: hidden;
+  background-color: blanchedalmond;
+}
+
+/* header display */
+header {
+  border: hidden;
+  display: inline;
+}
+
+code {
+  background-color: hsla(169, 75%, 66%, 1);
+}
+
+#CodeLanguage {
+  border: hidden;
+}
+
+/*Reset for elements*/
+.Cleared {
+  background-color: rgba(0,0,0,0);
+}
+
+.AboutHead {
+  position: relative;
+  padding-left: 25px;
+}
+
+/* dot (.) operator refers to an html "class", as in <p class = "nani"> */
+.IntroTitle {
+  border: hidden;
+  background-image: url("desktop-timeless_color.jpg");
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: blanchedalmond;
+  text-align: center;
+  color: rgb(46, 22, 134);
+  font-family: 'Teko', sans-serif;
+  font-size: 42px;
+}
+
+/* The hashtag (#) refers to an id, as in <p class="nani" id="nani"> where class can be shared among many elements but id will 
+only ever refer to a single element */
+#IntroTitle {
+  border: hidden;
+  display: inline-block; /* Necessary to place block elements within one another*/
+  background-color: rgba(255, 255, 255, 0);
+  letter-spacing: 0.75em;
+  font-style: oblique;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#NaviSection {
+  width: 100%;
+  display: inline-block;
+  border: hidden;
+  background-color:salmon;
+  text-align: center;
+}
+
+#navbar {
+  border: hidden;
+}
+/* nav bar padding to seperate the anchors*/
+#navbar a {
+  border: hidden;
+  text-align: center;
+  padding-left: 75px;
+  padding-right: 125px;
+  letter-spacing: .2em;
+}
+
+.BasicTexts {
+  display: flex;
+}
+
+.AboutText {
+  padding: 20px;
+  width: 70%;
+  position: relative;
+  overflow: visible;
+}
+
+#textareatypes {
+  margin: 15px;
+}
+
+.TextEffects {
+  display: flexbox;
+  width: 50%;
+
+}
+
+.MoreTextEffects {
+  display: flexbox;
+  flex-grow: 1;
+}
+
+.CrudeInlineBox {
+  text-align: center;
+  display: flexbox;  
+  width: 30%;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+  flex-grow: 1;
+  margin-top: 100px;
+}
+
+/* Classic method for centering your content. width = 100% margin = 0 auto;*/
+table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#OuterChangeBox {
+  position: relative;
+  
+}
+#ChangeBox th, td {
+  position: relative;
+  background-color: hsl(65, 80%, 65%);
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#ChangeBox td {
+  background-color: hsl(88, 70%, 80%);
+} 
+
+.AdjustCodeBlock {
+  margin-left: 100px;
+}
