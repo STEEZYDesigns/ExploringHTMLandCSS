@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> My First HTML / Codecademy Project </title>
+    <link type="text/css" rel="stylesheet" href="styleDefinitions.css"> <!--for linking files to this html-->
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+
+    <div height=3em> <!-- Whitespace small upper chunk --></div>
+
+    <div class="IntroTitle"> <!--Intro Header. adjusted h1 -> id == class.-->
+    <header height=22em>   
+      <h1 id="IntroTitle"> Exploring the attributes of ~<span id="CodeLanguage">HTML and CSS</span> ~</h1> 
+      <section id="NaviSection">
+        <nav id="navbar"> <!--NAVBAR -->
+          <a src=""> HTML </a> <!-- ANCHORS, hyperlinks, which are for client use to retrieve address-->
+          <a src=""> CSS </a> <!--unlike links. which are for files-->
+          <a src=""> Javascript </a>
+        </nav>
+      </section>
+    </header>
+    </div>
+
+    <main>
+      <section class="AboutHead">
+        <p>
+          Let us begin with how to make an html page like this one. First you should have <code title="A Document Type Definition, AKA a template that sets out 
+          the format and tag structure of an XML- or SGML-compliant document, because HTML 4.01 was based on SGML. The DTD specifies the rules for the markup 
+          language, so that the browsers render the content correctly. HTML5 is not based on SGML, and therefore does not require a reference to a DTD"> 
+          < !DOCTYPE html > </code> at the very top of your HTML file. 
+          This beginning piece of code goes along with 
+          <br> 
+          <code class = "AdjustCodeBlock" title="Opening and Closing Tags">< html > < / html > </code> 
+          <br>
+          which surrounds everything other than the beginning line of code. Doing this allows 
+          for your file to render correctly.
+          <br> 
+          After that we need a < head > < / head > which will surround everything except the <code > < ! DOCTYPE > </code> line.
+
+        </p>
+      </section>
+
+      <section class="BasicTexts">
+      <div class="AboutText">
+        <p>
+          This is a paragraph. Everyone should know how to label different sections of text.
+          There are  (the following does not use a list element)
+          <div id="textareatypes">
+          < p > < / p > <br>
+          < span >  < / span > <br>
+          < article > < / article > <br>
+          < textarea > < / textarea > <br>
+          < aside > < / aside > 
+          </div>
+          And many more. This page will be updated. You should also learn which HTML tags are self closing and which need an opening and a closing like those above. (Not just for text) <br>
+          I've also spaced the tags so they can appear as text, though in html the tags are closed in.
+          <br>
+          There are also ways to change the way text LOOKS other than just capitalizing it while typing it. 
+          <br> <br>
+          <div class="BasicTexts">
+            <div class="TextEffects">
+              <ul>
+                <li> <b> - Bold text </b> </li>
+                <li> As in: <strong> - Important text </strong></li>
+                <li> <i> - Italic text </i> </li>
+                <li> <em> - Emphasized text </em> </li>
+                <li> <mark> - Marked text </mark> </li>
+                <li> As in: <small> - Small text </small> </li>
+                <li> <del> - Deleted text </del> </li>
+                <li> <ins> - Inserted text </ins> </li> 
+                <li> As in: <sup> - Superscript text </sup> </li>
+                <li> As in: <sub> - Subscript text </sub> </li>
+                <li> <code> - Code text  </code> </li>
+              </ul>
+            </div>
+            <div class="MoreTextEffects">
+              <ul>
+                <li> <h1 class="Cleared"> - Headings </h1> </li>
+                <li> <h6> Written as < h1 > < / h1 > or < h6 > < / h6 ></li>
+                <li> <h6> - Ranging from 1 to 6 </h6> </li>
+              </ul>
+            </div>
+          </div>
+          <br> <br>
+          There are more than these as well. Use the Inspect Element features of your browser to explore the code. Everything will be plain html, css, and js. <br>
+          I would div each of the kinds of text effects but there are many. it is easier to list them with <strong> < ul > or < ol > and < li >. </strong> <br>
+          <br>
+          This whole white background section is actually very heavily reliant on html tags like < br > which isnt the best, for readability when studying the code, <br>
+          and this section has barely any CSS other than: 
+          <code>       
+            .AboutText {
+              padding: 20px;
+            }
+
+            #textareatypes {
+              margin: 15px;
+            }
+          </code>
+            but this is only the first section!
+        </p>
+      </div>
+
+      <div class="CrudeInlineBox">
+        This Box will be CSS'd to fit in the pocket of space that is left by my paragraph on the right. It must be placed inside the block that surrounds the white background <br>
+        To do this I included the following code: <br>
+        <h5> A section tag that surrounds the whole space with a white background. locally I named this section BasicTexts, and the CSS is as follows. </h5>
+        <code>
+          .BasicTexts { display: flex; }
+        </code>
+        <h5> Followed by Two divs, one with a <s>FIXED</s> width and one with a CSS property known as flex-grow with a value of 1</h5>
+        <code>
+          .AboutText { <br>
+            padding: 20px; <br>
+            width: 70%; <br>
+            position: relative; <br>
+            overflow: visible; <br>
+          } <br>
+          <br>
+          .CrudeInlineBox { <br>
+            text-align: center; <br>
+            display: flexbox;  <br>
+            width: 30%; <br>
+            height: 100%; <br>
+            position: relative; <br>
+            z-index: 100; <br>
+            flex-grow: 1; <br>
+            margin-top: 100px; <br>
+          }
+        </code>
+      </div>
+      </section>
+      
+      <section id="OuterChangeBox">
+        <div id="ChangeBox">
+          <table cols="2">
+            <th>
+              Introducing a table, this is a table head.
+                 
+                  hoyy, korre wa nan desu ka!?!??
+                  kisama . . .
+            </th>
+            <tbody>
+              <tr>
+              <td>
+                <p>
+                In fact this is a cell withing a table body, and this is the extent of what matters for tables. <br>
+                It is a deprecated form of placing elements in HTML. <br>
+                People consider this form of placing data in HTML too linear and inaccurate. Instead, we should learn to use grids.
+                </p>
+              </td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </section>
+
+      <div>
+        <p> Let's move on . . .</p>
+        <p> Fonts are pretty easy to learn. We have font-face and < link > to import fonts from online repositories or we can host them on
+          our own computers and access them with relative links <br>
+          <code class="AdjustCodeBlock"> 
+            @font-face { font-family: MyHelvetica; src: local("Helvetica Neue Bold"), url(MgOpenModernaBold.ttf); font-weight: bold; } 
+          </code>
+          <br>
+          The link element goes in an HTML < head > code block, where titles, links and metadata goes.
+          <br>
+          <code class="AdjustCodeBlock">
+            < link href = " /somerelativefile.someformat " rel="stylesheet" > 
+          </code>
+        </p>
+      </div>
+
+
+    </main>
+  </body>
+</html>
